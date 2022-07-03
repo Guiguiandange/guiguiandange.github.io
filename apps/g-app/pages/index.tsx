@@ -6,13 +6,13 @@ export function Index() {
   return (
     <Layout title='Welcome g-app'>
       <div>
-        <h1>Welcome g-app</h1>
+        <span className="capitalize title">welcome g-app</span>
       </div>
       <div>
-        <Link href='/posts'>Go To Posts</Link>
+        <Link href='/posts'><span className="capitalize link">go to posts</span></Link>
       </div>
       <div>
-        <Link href='/posts/detail'>Go To Post Detail</Link>
+        <Link href='/posts/detail'><span className="capitalize link">go to post detail</span></Link>
       </div>
     </Layout>
   );

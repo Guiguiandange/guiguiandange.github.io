@@ -7,7 +7,9 @@ export function Layout({ title, children }) {
       <Head>
         <title>{title}</title>
       </Head>
-      {children}
+      <div>
+        {children}
+      </div>
     </>
   );
 }
