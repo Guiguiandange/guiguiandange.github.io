@@ -11,22 +11,26 @@ export const getServerSideProps: GetServerSideProps = async function() {
 };
 
 export function Posts({ posts }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  // TODO GCL : i18n
+  // TODO GCL : i18n, sub-title
   return (
     <Layout title={'Posts'}>
       <div>
-        <h1>Posts</h1>
+        <span className="capitalize title">Posts</span>
       </div>
       <div>
         {posts.map(post => (
-          <div key={post.id}>
-            <h2>{post.title}</h2>
-            <span>{post.content}</span>
+          <div key={post.id} className="bg-red-500 mt-4">
+            <div>
+              <span className="capitalize sub-title">{post.title}</span>
+            </div>
+            <div>
+              <span>{post.content}</span>
+            </div>
           </div>
         ))}
       </div>
       <div>
-        <Link href='/'>Home</Link>
+        <Link href='/'><span className="capitalize link">Home</span></Link>
       </div>
     </Layout>
   );

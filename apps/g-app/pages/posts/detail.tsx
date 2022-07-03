@@ -6,10 +6,10 @@ function PostDetail() {
   return (
     <Layout title={'First Page'}>
       <div>
-        <h1>First Page</h1>
+        <span className="capitalize title">First Page</span>
       </div>
       <div>
-        <Link href='/'>Home</Link>
+        <Link href='/'><span className="capitalize link">Home</span></Link>
       </div>
     </Layout>
   );
