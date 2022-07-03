@@ -14,7 +14,7 @@
   "private": true,
   "dependencies": {
     "@nrwl/next": "14.4.0",
-    "@prisma/client": "^4.0.0",
+    "@prisma/client": "4.0.0",
     "core-js": "3.23.3",
     "next": "12.2.0",
     "react": "18.2.0",
