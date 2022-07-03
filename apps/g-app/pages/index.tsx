@@ -9,7 +9,10 @@ export function Index() {
         <h1>Welcome g-app</h1>
       </div>
       <div>
-        <Link href='/posts/first'>Go To Post</Link>
+        <Link href='/posts'>Go To Posts</Link>
+      </div>
+      <div>
+        <Link href='/posts/detail'>Go To Post Detail</Link>
       </div>
     </Layout>
   );
