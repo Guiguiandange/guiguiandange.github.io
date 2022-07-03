@@ -1,7 +1,7 @@
 import { Layout } from '../../components/Layout';
 import Link from 'next/link';
 
-export function PostDetail() {
+function PostDetail() {
   // TODO GCL : i18n
   return (
     <Layout title={'First Page'}>
