@@ -1,4 +1,5 @@
-import styles from './index.module.scss';
+import styles from './index.module.sass';
+import Link from 'next/link';
 
 export function Index() {
   return (
