@@ -19,7 +19,7 @@ export function Posts({ posts }: InferGetServerSidePropsType<typeof getServerSid
       </div>
       <div>
         {posts.map(post => (
-          <div key={post.id} className="bg-red-500 mt-4">
+          <div key={post.id}>
             <div>
               <span className="capitalize sub-title">{post.title}</span>
             </div>
