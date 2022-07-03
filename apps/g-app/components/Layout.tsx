@@ -1,16 +1,13 @@
-export function Layout({ children }) {
+import Head from 'next/head';
+
+export function Layout({ title, children }) {
   // TODO GCL : i18n
   return (
     <>
-      <div>
-        <h1>Header</h1>
-      </div>
-      <div>
-        {children}
-      </div>
-      <div>
-        <h1>Footer</h1>
-      </div>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      {children}
     </>
   );
 }

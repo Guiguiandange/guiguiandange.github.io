@@ -1,19 +1,8 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import './reset.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
-  // TODO GCL : i18n
-  return (
-    <>
-      <Head>
-        <title>{pageProps?.title || 'Welcome g-app'}</title>
-      </Head>
-      <main>
-        <Component {...pageProps} />
-      </main>
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default CustomApp;
